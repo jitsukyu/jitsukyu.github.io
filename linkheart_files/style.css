@@ -1,0 +1,503 @@
+@charset "shift_jis";
+
+/*
+---------------------------------------------------------------------------
+■制作元：テンプレートパーティー
+■URL：http://template-party.com/
+---------------------------------------------------------------------------*/
+
+body {
+	color: #333333;	/*全般の文字色*/
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font: 13px/2 "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";	/*全般の文字サイズ、行間、フォント指定*/
+	background: #FFFFFF;	/*背景色*/
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style-type: none;
+}
+img {
+	border: none;
+}
+input,textarea,select {
+	font-size: 1em;
+}
+form {
+	margin: 0px;
+}
+table {
+	border-collapse:collapse;
+	font-size: 100%;
+	border-spacing: 0;
+}
+
+/*リンク（全般）設定
+---------------------------------------------------------------------------*/
+a {
+	color: #979797;	/*リンクテキストの文字色*/
+}
+a:hover {
+	color: #fcae34;	/*マウスオン時の文字色（全体）*/
+	text-decoration: none;	/*マウスオン時に下線を消す設定。残したいならこの１行削除。*/
+}
+
+/*コンテナー（HPを囲むブロック）
+---------------------------------------------------------------------------*/
+#container {
+	text-align: left;
+	width: 975px;	/*コンテナー幅*/
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*ヘッダー（ロゴなどが入っているブロック）
+---------------------------------------------------------------------------*/
+#header {
+	text-align: left;
+	width: 100%;
+	height: 96px;		/*ヘッダーの高さ*/
+	position: relative;
+	padding-bottom: 10px;	/*ヘッダー下に余白*/
+}
+/*h1見出しタグ設定*/
+#header h1 {
+	font-size: 9px;			/*文字サイズ*/
+	font-weight: normal;	/*文字の太さを標準にする。hタグのデフォルトの太字がいいならこの１行削除。*/
+	text-align: right;		/*右よせ*/
+	line-height: 10px;		/*行間*/
+	position: absolute;
+	right: 0px;	/*ヘッダーブロックに対して右から0pxの位置に配置*/
+	top: 10px;	/*ヘッダーブロックに対して上から10pxの位置に配置*/
+}
+#header h1 a {
+	text-decoration: none;
+}
+/*ロゴ画像設定*/
+#header #logo {
+	position: absolute;
+	left: 0px;	/*ヘッダーブロックに対して左から0pxの位置に配置*/
+	top: 0px;	/*ヘッダーブロックに対して上から0pxの位置に配置*/
+}
+
+/*メインメニュー（画像用）
+---------------------------------------------------------------------------*/
+ul#menu {
+	position: absolute;
+	height: 50px;
+	width: 755px;
+	top: 46px;	/*ヘッダーブロックに対して上から46pxの位置に配置*/
+	right: 0px;	/*ヘッダーブロックに対して右から0pxの位置に配置*/
+}
+ul#menu li {
+	float: left;
+}
+ul#menu img {
+	vertical-align: bottom;
+}
+/*メインメニュー（テキスト用）
+---------------------------------------------------------------------------*/
+ul#menu2 {
+	position: absolute;
+	height: 50px;
+	width: 755px;
+	top: 46px;		/*ヘッダーブロックに対して上から46pxの位置に配置*/
+	left: 220px;	/*ヘッダーブロックに対して左から220pxの位置に配置*/
+}
+ul#menu2 li {
+	float: left;
+	text-align: center;	/*文字をセンタリング*/
+	width: 150px;
+	border-right: 1px solid #000;	/*メニュー右側の線の幅、線種、色*/
+	line-height: 1.2;
+	font-weight: bold;	/*文字を太字に*/
+}
+ul#menu2 li a {
+	text-decoration: none;
+	display: block;
+	width: 150px;
+	height: 40px;
+	padding-top: 10px;
+}
+ul#menu2 li a:hover {
+	background: #e8e8e8;	/*マウスオン時の背景色*/
+	color: #333;			/*マウスオン時の文字色*/
+}
+/*英語表記部分*/
+ul#menu2 li span {
+	font-size: 9px;	/*文字サイズ*/
+	color: #999;	/*文字色*/
+	font-weight: normal;	/*上で太字にしたので、英語表記をは標準に戻す*/
+}
+
+/*コンテンツ（mainとsubとfooterを囲むブロック）
+---------------------------------------------------------------------------*/
+#contents {
+	clear: left;	/*メニューのfloatを解除*/
+	width: 100%;
+	padding-top: 3px;
+}
+
+/*メインコンテンツ（右側ブロック）
+---------------------------------------------------------------------------*/
+#main {
+  height: 410px;
+  background-color:#FFF;
+  padding-top:-5px;
+}
+#main-1 {
+	height:1000px;
+
+}
+#main-4 {
+	height:990px;
+}
+#main-5{
+	height: 900px;
+}
+#main-5 .xbiao {
+	margin:0 auto;
+}
+#main-5 .color1 {
+	color:#f32933;
+	margin-left: 115px;
+	padding-top:20px;
+}
+.bbox {
+	margin-left: 120px;
+}
+.mb1em {
+	color:#2f96d9;
+	margin-right:120px;
+}
+.title {
+	width:130px;
+	height:25px;
+	margin:0 auto 0 auto;
+}
+#main .list {
+    height:150px;
+	margin:88px auto 0 auto;
+	padding:0 0 0 150px;
+}
+#main .list ul{
+    margin:0 0 0 -80px;
+}
+#main .list li {
+	width:118px;
+	height:118px;
+	float:left;
+  margin:0 100px 0 0;
+}
+#main .list li span {
+	display: block;
+    padding-top: 18px;
+    color: #707070;
+    font-size: 0.96em;
+    font-weight: 700;
+    text-align: center;
+}
+#main .list a {
+	display:block;
+    width:118px;
+    height:118px;
+}
+
+#main .list a.tb1:link,#main .list  a.tb1:visited {
+    text-decoration:none;
+    background:url(../images/tubiao-1_03.png);
+}
+#main .list a.tb1:hover,#main .list a.tb1:active {
+    text-decoration:none;
+    font-weight:bold;
+    background:url(../images/tubiao-on-1_03.png);
+}
+
+#main .list a.tb2:link,#main .list  a.tb2:visited {
+    text-decoration:none;
+    background:url(../images/tubiao-2_03.png);
+}
+#main .list a.tb2:hover,#main .list a.tb2:active {
+    text-decoration:none;
+    font-weight:bold;
+    background:url(../images/tubiao-on-2_03.png);
+}
+
+#main .list a.tb3:link,#main .list  a.tb3:visited {
+    text-decoration:none;
+    background:url(../images/tubiao-3_03.png);
+}
+#main .list a.tb3:hover,#main .list a.tb3:active {
+    text-decoration:none;
+    font-weight:bold;
+    background:url(../images/tubiao-on-3_03.png);
+}
+
+#main .list a.tb4:link,#main .list  a.tb4:visited {
+    text-decoration:none;
+    background:url(../images/tubiao-4_03.png);
+}
+#main .list a.tb4:hover,#main .list a.tb4:active {
+    text-decoration:none;
+    font-weight:bold;
+    background:url(../images/tubiao-on-4_03.png);
+}
+
+
+#third {
+	height:374px;
+	background:url(../images/backgd.png);
+}
+#third .title-1 {
+	width:92px;
+	height:27px;
+	margin:0 auto 0 auto;
+	padding-top: 55px;
+}
+#third .linian {
+	width: 483px;
+	height: 159px;
+	margin:0 auto 0 auto;
+	padding-top: 55px;
+}
+
+
+
+#forth {
+	height:460px;
+	margin:0px auto;
+	background-color:#FFF;
+	padding-top:15px;
+}
+#forth .title-2 {
+	width:238px;
+	height:28px;
+	margin:0 auto 0 auto;
+	padding-top: 55px;
+}
+#forth .nr {
+	width:600px;
+	height:350px;
+	margin:0 auto 0 auto;
+	padding-top: 45px;
+}
+#forth .nr p {
+	line-height:25px;
+}
+
+
+#footer {
+	clear: both;
+	width: 100%;
+	height: 123px;
+	text-align: center;	/*文字をセンタリング*/
+	font-size: 11px;	/*文字サイズ*/
+	background-image:url(../images/foot_02.png); background-repeat:repeat-x;	/*背景色*/
+	color: #FFF;		/*文字色*/
+}
+#footer p {
+	position: relative;
+	top: 52px;
+	line-height: 25px;
+}
+#footer a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*テーブル１
+---------------------------------------------------------------------------*/
+.ta1 {
+	width: 730px;
+	margin-top:60px;
+	margin-left: 115px;
+}
+.ta1, .ta1 td, .ta1 th{
+	border: 1px solid #adadad;	/*テーブルの枠線の幅、線種、色*/
+	line-height: 2;
+}
+/*テーブル内の右側*/
+.ta1 td{
+	width: 487px;
+	padding: 10px;
+	vertical-align: top;
+}
+/*テーブル内の段落タグの余白*/
+.ta1 p {
+	padding: 0px !important;
+}
+/*テーブル内の左側の見出し部分*/
+.ta1 th{
+	width: 200px;
+	padding: 10px;
+	text-align: center;
+	background: #e8eef2;	/*背景色*/
+}
+/*テーブル１行目に入った見出し部分*/
+.ta1 th.tamidashi{
+	width: auto;
+	text-align: left;
+	color: #FFF;		/*文字色*/
+	background: #2f96d9;	/*背景色*/
+}
+
+.ta1-1 {
+	width: 730px;
+	margin-top:20px;
+	margin-left: 115px;
+}
+.ta1-1, .ta1-1 td, .ta1-1 th{
+	border: 1px solid #adadad;	/*テーブルの枠線の幅、線種、色*/
+	line-height: 2;
+}
+/*テーブル内の右側*/
+.ta1-1 td{
+	width: 487px;
+	padding: 10px;
+	vertical-align: top;
+}
+/*テーブル内の段落タグの余白*/
+.ta1-1 p {
+	padding: 0px !important;
+}
+/*テーブル内の左側の見出し部分*/
+.ta1-1 th{
+	width: 200px;
+	padding: 10px;
+	text-align: center;
+	background: #e8eef2;	/*背景色*/
+}
+/*テーブル１行目に入った見出し部分*/
+.ta1-1 th.tamidashi{
+	width: auto;
+	text-align: left;
+	color: #FFF;		/*文字色*/
+	background: #2f96d9;	/*背景色*/
+}
+
+
+.xbiao {
+	color:#2f96d9;
+	}
+.ta1-2 {
+	width: 730px;
+	margin-top:50px;
+	margin-left: 115px;
+}
+.ta1-2, .ta1-2 td, .ta1-2 th{
+	border: 1px solid #adadad;	/*テーブルの枠線の幅、線種、色*/
+	line-height: 2;
+}
+/*テーブル内の右側*/
+.ta1-2 td{
+	width: 487px;
+	padding: 10px;
+	vertical-align: top;
+}
+/*テーブル内の段落タグの余白*/
+.ta1-2 p {
+	padding: 0px !important;
+}
+/*テーブル内の左側の見出し部分*/
+.ta1-2 th{
+	width: 200px;
+	padding: 10px;
+	text-align: center;
+	background: #e8eef2;	/*背景色*/
+}
+/*テーブル１行目に入った見出し部分*/
+.ta1-2 th.tamidashi{
+	width: auto;
+	text-align: left;
+	color: #FFF;		/*文字色*/
+	background: #2f96d9;	/*背景色*/
+}
+/*service.htmlページのボックス
+---------------------------------------------------------------------------*/
+#main-2 .box1 {
+	padding: 20px;	/*?{?b?N?X?a?I?]??*/
+	overflow: hidden;
+	margin-bottom: 2em;
+	border: 2px solid #a4cae6;	/*?{?b?N?X?I?u???A?u?i?A?F*/
+	width: 704px;
+}
+/*?E?^*/
+#main-2 .box1 img {
+	float: left;	/*?a???d?¶?E?n?e???Y*/
+	}
+/*h3?c?o?μ?^?O*/
+#main-2 .box1 h3 {
+	font-size: 100%;		/*?¶???T?C?Y*/
+	margin-left: 165px;		/*?¶?I?E?^?A?o?????X?d?A?A?A?Y?e*/
+	background: #d1e6f5;	/*?w?i?F*/
+	border-left: 3px solid #2f96d9;	/*?o???I?u?I???A?u?i?A?F*/
+	margin-bottom: 0.5em;
+	padding: 3px 0px 3px 5px;	/*?¶?c?c?A?a?A?E?A?o?A?¶?O?I?]??*/
+}
+/*?i???^?O*/
+#main-2 .box1 p {
+	padding: 0px 0px 0px 5px;	/*?¶?c?c?A?a?A?E?A?o?A?¶?O?I?]??*/
+	margin-left: 165px;	/*?¶?I?E?^?A?o?????X?d?A?A?A?Y?e*/
+}
+
+/*トップページのスライドショー
+---------------------------------------------------------------------------*/
+#mainimg {
+	clear: left;
+	position: relative;
+	height: 260px;
+	width: 975px;
+}
+#mainimg .slide_file {
+	display: none;
+}
+#slide_image {
+	z-Index:2;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+#slide_image2 {
+	z-Index:1;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+
+/*その他
+---------------------------------------------------------------------------*/
+.look {
+	background: #DCDCDC;
+}
+.mb1em {
+	margin-bottom: 1em;
+}
+.clear {
+	clear: both;
+}
+ul.disc {
+	padding: 0em 25px 1em;
+	list-style: disc;
+}
+.color1 {
+	color: #C00000;
+}
+.pr {
+	font-size: 10px;
+}
+.btn {
+	font-size: 13px;
+}
+.wl {
+	width: 96%;
+}
+.ws {
+	width: 50%;
+}
+.c {
+	text-align: center;
+}

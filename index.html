@@ -1,89 +1,96 @@
----
-layout: default
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0032)http://popunavi.com/recruit.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
 
- <div class="container docs-container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="sidebar hidden-print" role="complementary">
-            <div id="navigation">
-              <h1>逶ｮ蠖�</h1>
-              <ul class="nav sidenav">
-                {% for post in site.posts  %}
-                  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-                  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-                  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-                  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-                  {% if forloop.first %}
-                    <li><a href="#year_{{this_year}}">{{this_year}}</a>
-                      <ul class="nav">
-                        <li><a href="#month_{{this_year}}_{{this_month}}">{{this_month}}</a></li>
-                  {% endif %}
-                  {% if forloop.last %}
-                        </ul>
-                      </li>
-                  {% else %}
-                    {% if this_year != next_year %}
-                        </ul>
-                      </li>
-                      <li><a href="#year_{{next_year}}">{{next_year}}</a>
-                        <ul class="nav">
-                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
-                    {% else %}    
-                      {% if this_month != next_month %}
-                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
-                      {% endif %}
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </ul>
-              <div style="height: 200px;width: 200px;">
-                
-                <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i={{ site.revolvermaps }}&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
-                </script>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-9" role="main">
-          <div class="panel docs-content">
-            <div class="wrapper">
-              <div class="home">
-                {% for post in site.posts  %}
-                  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-                  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-                  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-                  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>POPUNAVI株式会社、ソフトウェア・システム開発、ITエンジニア、受託開発、常駐開発</title>
+<meta name="copyright" content="POPUNAVI株式会社">
+<meta name="description" content="ソフトウェア・システム開発、ITエンジニア、受託開発、常駐開発">
+<meta name="keywords" content="ソフトウェア,システム開発,ITエンジニア,受託開発,常駐開発">
+<link href="./linkheart_files/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./linkheart_files/script.js"></script>
+</head>
 
-                  {% if forloop.first %}
-                    <h1 id="year_{{this_year}}">{{this_year}}</h1>
-                    <h2 id="month_{{this_year}}_{{this_month}}">{{this_month}}</h2>
-                    <ul>
-                  {% endif %}
+<body>
 
-                  <ol class="breadcrumb">
-                   <li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-                  </ol>
-                  {% if forloop.last %}
-                    </ul>
-                  {% else %}
-                    {% if this_year != next_year %}
-                      </ul>
-                      <h1 id="year_{{next_year}}">{{next_year}}</h1>
-                      <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h2>
-                      <ul>
-                    {% else %}    
-                      {% if this_month != next_month %}
-                        </ul>
-                        <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h2>
-                        <ul>
-                      {% endif %}
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div id="container">
+
+<div id="header">
+<p id="logo"><img src="./linkheart_files/logo1.png" alt="" width="220" height="96"></p>
+<ul id="menu">
+<li><a href="http://popunavi.com/index.html"><img src="./linkheart_files/menu_01.gif" alt="ホーム" name="Image1" width="151" height="50" id="Image1" onmouseover="MM_swapImage(&#39;Image1&#39;,&#39;&#39;,&#39;images/menu_on-01.gif&#39;,0)" onmouseout="MM_swapImgRestore()"></a></li>
+<li><a href="http://popunavi.com/company.html"><img src="./linkheart_files/menu_02.gif" alt="会社概要" name="Image2" width="151" height="50" id="Image2" onmouseover="MM_swapImage(&#39;Image2&#39;,&#39;&#39;,&#39;images/menu_on-02.gif&#39;,0)" onmouseout="MM_swapImgRestore()"></a></li>
+<li><a href="http://popunavi.com/service.html"><img src="http://popunavi.com/images/menu_on-03.gif" alt="サービス紹介" name="Image3" width="151" height="50" id="Image3" onmouseover="MM_swapImage(&#39;Image3&#39;,&#39;&#39;,&#39;images/menu_on-03.gif&#39;,0)" onmouseout="MM_swapImgRestore()"></a></li>
+<li><a href="http://popunavi.com/recruit.html"><img src="./linkheart_files/menu_04.gif" alt="採用情報" name="Image4" width="151" height="50" id="Image4" onmouseover="MM_swapImage(&#39;Image4&#39;,&#39;&#39;,&#39;images/menu_on-04.gif&#39;,0)" onmouseout="MM_swapImgRestore()"></a></li>
+<li><a href="http://popunavi.com/contact.html"><img src="./linkheart_files/menu_05.gif" alt="お問い合わせ" name="Image5" width="151" height="50" id="Image5" onmouseover="MM_swapImage(&#39;Image5&#39;,&#39;&#39;,&#39;images/menu_on-05.gif&#39;,0)" onmouseout="MM_swapImgRestore()"></a></li>
+</ul>
+</div>
+<!--/header-->
+
+<div id="contents">
+
+<div id="main-4">
+<h2 class="img mb1em"><img src="./linkheart_files/ba3_02.png" width="975" height="379" alt="採用情報"></h2>
+
+<h2 class="mb1em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;採用情報</h2>
+
+<table class="ta1-1">
+<tbody><tr>
+<th class="tamidashi" colspan="2">弊社では、常時下記の要員を募集しております。ご応募お待ちしております。 </th>
+</tr>
+<tr>
+<th>募集対象</th>
+<td>システム開発要員（マネ―ジャ、SE、PG）。</td>
+</tr>
+<tr>
+<th>技術分野</th>
+<td>オープン系開発、Web開発、組み込み開発ほか（Java VB C C++ C# ASP.NET SQL Server Oracle）。</td>
+</tr>
+<tr>
+<th>雇用形態</th>
+<td>正社員、契約社員。</td>
+</tr>
+<tr>
+<th>給与</th>
+<td>当社規定により、経験・能力を考慮のうえで優遇 。</td>
+</tr>
+<tr>
+<th>休日休暇</th>
+<td>完全週休2日制、祝日（客先による変動可能性があります）。</td>
+</tr>
+<tr>
+<th>勤務地</th>
+<td>東京都内各地・横浜・千葉（現住所を考慮し決定します） </td>
+</tr>
+<tr>
+<th>学　歴</th>
+<td>専門学校卒業以上（高校卒業の場合は二年以上実務経験者のみ可）。</td>
+</tr>
+<tr>
+</tr><tr>
+<th>応募方法</th>
+<td>経歴書をご記入の上、info@popunavi-soft.comまでご送付ください</td>
+</tr>
+</tbody></table>
+
+</div>
+<!--/main-->
+
+
+<!--/sub-->
+
+<div id="footer">
+<p>Copyright&#169; All Rights Reserved.<br>
+</p></div>
+<!--/footer-->
+
+</div>
+<!--/contents-->
+
+</div>
+<!--/container-->
+
+
+
+</body></html>
